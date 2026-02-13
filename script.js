@@ -28,13 +28,13 @@ document.querySelectorAll("button").forEach(button => {
   button.addEventListener("click", async () => {
     const name = button.dataset.dict;
 
-    status.textContent = "Loading...";
+    status.textContent = "loading dictionary...";
     currentlang = name;
     params.set('lang', name);
     history.replaceState(null, '', '?' + params);
     await loadDictionary(name);
     searchInput.disabled = true;
-    status.textContent = `Loaded ${name}`;
+    status.textContent = "";
     searchInput.disabled = false;
     desctext.textContent = Description
     runSearch();
