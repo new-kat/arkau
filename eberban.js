@@ -5823,12 +5823,12 @@ return ``;
 
 const desc = "sá chuo lâ joaı báq toa - dictionary searcher for conlangs";
 const rankEntries= (data, qRaw) =>  {
-  const query = qRaw.toLowerCase().replace(" ", "");
+  const query = qRaw.toLowerCase().replace(/ /g, "");
   const qDef = qRaw.toLowerCase();
   console.log(DICT, "a");
   let a =  data
     .map(entry => {
-      const word = entry.name.toLowerCase().replace(" ", "");
+      const word = entry.name.toLowerCase().replace(/ /g, "");
       const def = entry.def.toLowerCase();
       const defwords = def.split(" ");
       const key = (entry.key || "");
