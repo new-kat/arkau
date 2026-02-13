@@ -12,7 +12,8 @@ margin: 0 auto;
 font-weight: 400;
   background: #e3ffe0;
   color: #223322;
-width:600px;
+max-width: 600px;
+width: 100%;
 padding:0 10px;
 }
 
