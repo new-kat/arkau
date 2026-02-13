@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'Outfitf';
+	font-display: swap;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url('font/Outfit.ttf');
+}
+
+body {
+  font-family: -apple-system, "Outfitf" ,sans-serif;
+margin: 0 auto;
+font-weight: 400;
+  background: #e3ffe0;
+  color: #223322;
+width:600px;
+padding:0 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+dt{
+font-weight:540}
+
+dl{
+margin:0.5em}
+#outbox {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+#search {
+  flex: 1;
+  padding: 0.5em;
+  font-size: 1em;
+  height:2em;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-family: inherit
+}
+
+.entry {
+  border: 1px solid #ddd;
+  background: #f6fff4;
+  border-radius: 8px;
+ padding: 1em;
+  margin-top: 1em;
+
+  border-left: 4px solid #84d985;
+  box-shadow: 0 0 3px rgba(0, 64, 0, 0.1);
+  position: relative
+}
+
+.official {
+color:  #003d00;
+font-weight: bold;
+border-bottom: 1px solid;
+
+}
+
+
+dd{
+  padding-top:10px
+}
+
+.wordbox {
+  color: #135513;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+  color: #000;
+  display: inline-block;
+}
+
+.sign {
+    background: #d2ffd2;
+  border-radius: 4px;
+      padding: 0.1em 0.4em;
+color:gray;
+ display: flex;
+ justify-content: space-between;
+  align-items: center;
+}
+
+.score {
+      padding: 0.1em 0.4em;
+color:gray;
+ white-space: nowrap;
+}
+
+.posbox {
+  background: #d2ffd2;
+  border: 1px solid #88cc88;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+float:right
+}
+
+
+.posbox {
+  color:gray;
+  padding: 0.1em 0.4em;
+}
+
+
+details summary {
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+#resnum,#resnuml {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #444;
+  display:inline-block
+}
+#resnuml{
+  float:right
+}
+#afterresults{
+font-size: 3em;
+}ul {
+  margin: 0;
+  padding-left: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.n {
+
+color:rgb(143, 50, 50);
+}
+
+.toaqnote {
+  padding-left:1.5em;
+  margin-top:-1.5em;
+  margin-bottom: 1em
+}
+
+.arg{
+  display: inline;
+  padding: 1px 4px;
+  margin: 5px 0;
+  background-color: #88cc88;
+  border-radius: 3px;
+  color: #ffffff;
+}
