@@ -5730,7 +5730,6 @@ const DICT=[
     "id": "lq1uvzug5t"
   }
 ]
-
 const renderEntry = (entry) => {
 
   return `
@@ -5739,32 +5738,27 @@ const renderEntry = (entry) => {
         <a href="?q=${entry.name}" class="wordbox"><b>${entry.name}</b></a>
       </dt><dd>
       <ul>
-      <li><span>›&emsp;${entry.def}</span></li>
+      <li><span>›&emsp;${entry.def.replace(/\[([^\[\]]+)\]/g,"<div class='arg'>$1</div>")}</span></li>
       </ul></dd>
     </dl>`;
 }
-const powers_of_ten = [""," heı", " fue", " bıq"];
-const digits = ["","shı", "gu","saq","jo","fe","cı","dıaı","roaı","neı"];
+const digits = ["ti","te", "ta","to","tu","tie","tia","tio","tiu","tei"];
 
 
 const numbermaker= (n) =>  {
-  if (n===0){return "hıe jí sá <b>sía</b> se"}
   const s = n.toString();
-  const maxpower = s.length-1;
-  const result = [...s].map((d, i) => (d==1?"":digits.at(d))+(d ? powers_of_ten[(maxpower - i) % 3]:"")).join(" ");
-
-
-return `hıe jí sá se <b>${result}</b>`; 
+  const result = [...s].reduce((a,d) => a+digits[d],"");
+return `<b>${result}</b> ji ebanci`; 
 }
 
-const desc = "sá chuo lâ joaı báq toa - dictionary searcher for conlangs";
+const desc = "dictionary searcher for conlangs";
 const rankEntries= (data, qRaw) =>  {
-  const query = qRaw.toLowerCase().replace(" ", "");
+  const query = qRaw.toLowerCase().replace(/ /g, "");
   const qDef = qRaw.toLowerCase();
   console.log(DICT, "a");
   let a =  data
     .map(entry => {
-      const word = entry.name.toLowerCase().replace(" ", "");
+      const word = entry.name.toLowerCase().replace(/ /g, "");
       const def = entry.def.toLowerCase();
       const defwords = def.split(" ");
       const key = (entry.key || "");
