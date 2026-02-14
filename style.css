@@ -5,6 +5,7 @@
 	font-style: normal;
 	src: url('font/Outfit.ttf');
 }
+
 :root{
   --bg: #e3ffe0;
   --text: #000;
@@ -17,15 +18,17 @@ body {
   font-family: -apple-system, "Outfitf" ,sans-serif;
 margin: 0 auto;
 font-weight: 400;
-  background: #e3ffe0;
-  color: #223322;
-max-width: 600px;
-width: 100%;
+  background: var(--bg);
+  color: var(--text);
+width:600px;
 padding:0 10px;
 }
+
 .checked{
-  border: #000 2px solid !important;
+  border: var(--text) 2px solid !important;
 }
+
+
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.2em;
@@ -74,7 +77,6 @@ margin:0.5em}
 #ith4{
   background-color: #ff4545;
 }
-
 #search {
   flex: 1;
   padding: 0.5em;
@@ -87,7 +89,8 @@ margin:0.5em}
 
 .entry {
   border: 1px solid #ddd;
-  background: #f6fff4;
+  background: var(--entrybg);
+  color:var(--text);
   border-radius: 8px;
  padding: 1em;
   margin-top: 1em;
@@ -114,7 +117,7 @@ dd{
   text-decoration: none;
   font-size: 1.2em;
   margin-right: 0.5em;
-  color: #000;
+  color: var(--text);
   display: inline-block;
 }
 
@@ -136,7 +139,7 @@ color:gray;
 
 .posbox {
   background: #d2ffd2;
-  border: 1px solid #88cc88;
+  border: 1px solid var(--linething);
   border-radius: 4px;
   padding: 0.1em 0.4em;
 float:right
@@ -169,11 +172,20 @@ font-size: 3em;
   padding-left: 10px;
 }
 
+li::before {
+  content: var(--sidenote, "");
+  font-weight: bold;
+  position: absolute;
+  left: -3em;
+}
+
+
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
+position: relative;
 }
 .n {
 
