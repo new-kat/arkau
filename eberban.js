@@ -1,75 +1,5 @@
 const DICT=[
   {
-    "name": "0",
-    "type": "NI",
-    "key": "#namespace-extract",
-    "def": "Extract predicate from given namespace, making it usable without {pi}.",
-    "id": "fa5t5drbrq"
-  },
-  {
-    "name": "1",
-    "type": "O",
-    "key": "#def",
-    "def": "Start a predicate definition.",
-    "id": "mkilbshz7v"
-  },
-  {
-    "name": "2",
-    "type": "TI",
-    "key": "ta",
-    "def": "Digit 2",
-    "id": "vhdoiu4y7b"
-  },
-  {
-    "name": "3",
-    "type": "TI",
-    "key": "to",
-    "def": "Digit 3",
-    "id": "ht2vpalcxn"
-  },
-  {
-    "name": "4",
-    "type": "TI",
-    "key": "tu",
-    "def": "Digit 4",
-    "id": "v6z63bfmfc"
-  },
-  {
-    "name": "5",
-    "type": "TI",
-    "key": "tie",
-    "def": "Digit 5",
-    "id": "jxgthvv20z"
-  },
-  {
-    "name": "6",
-    "type": "TI",
-    "key": "tia",
-    "def": "Digit 6",
-    "id": "clpqjeyf1b"
-  },
-  {
-    "name": "7",
-    "type": "TI",
-    "key": "tio",
-    "def": "Digit 7",
-    "id": "nftvzwfter"
-  },
-  {
-    "name": "8",
-    "type": "TI",
-    "key": "tiu",
-    "def": "Digit 8",
-    "id": "fm5zmy6i6s"
-  },
-  {
-    "name": "9",
-    "type": "TI",
-    "key": "tei",
-    "def": "Digit 9",
-    "id": "xfkrzesgc0"
-  },
-  {
     "name": "ma",
     "type": "MI",
     "key": "atom",
@@ -5800,6 +5730,7 @@ const DICT=[
     "id": "lq1uvzug5t"
   }
 ]
+
 const renderEntry = (entry) => {
 
   return `
@@ -5808,7 +5739,7 @@ const renderEntry = (entry) => {
         <a href="?q=${entry.name}" class="wordbox"><b>${entry.name}</b></a>
       </dt><dd>
       <ul>
-      <li><span>›&emsp;${entry.def.replace(/\[([^\[\]]+)\]/g,"<div class='arg'>$1</div>")}</span></li>
+      <li><span>›&emsp;${entry.def}</span></li>
       </ul></dd>
     </dl>`;
 }
@@ -5817,18 +5748,23 @@ const digits = ["","shı", "gu","saq","jo","fe","cı","dıaı","roaı","neı"];
 
 
 const numbermaker= (n) =>  {
+  if (n===0){return "hıe jí sá <b>sía</b> se"}
+  const s = n.toString();
+  const maxpower = s.length-1;
+  const result = [...s].map((d, i) => (d==1?"":digits.at(d))+(d ? powers_of_ten[(maxpower - i) % 3]:"")).join(" ");
 
-return ``; 
+
+return `hıe jí sá se <b>${result}</b>`; 
 }
 
 const desc = "sá chuo lâ joaı báq toa - dictionary searcher for conlangs";
 const rankEntries= (data, qRaw) =>  {
-  const query = qRaw.toLowerCase().replace(/ /g, "");
+  const query = qRaw.toLowerCase().replace(" ", "");
   const qDef = qRaw.toLowerCase();
   console.log(DICT, "a");
   let a =  data
     .map(entry => {
-      const word = entry.name.toLowerCase().replace(/ /g, "");
+      const word = entry.name.toLowerCase().replace(" ", "");
       const def = entry.def.toLowerCase();
       const defwords = def.split(" ");
       const key = (entry.key || "");
