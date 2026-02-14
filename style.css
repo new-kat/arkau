@@ -5,6 +5,13 @@
 	font-style: normal;
 	src: url('font/Outfit.ttf');
 }
+:root{
+  --bg: #e3ffe0;
+  --text: #000;
+  --entrybg: #f6fff4;
+  --linething:#84d985;
+  --whiteish: #eee
+}
 
 body {
   font-family: -apple-system, "Outfitf" ,sans-serif;
@@ -16,7 +23,9 @@ max-width: 600px;
 width: 100%;
 padding:0 10px;
 }
-
+.checked{
+  border: #000 2px solid !important;
+}
 h1 {
   font-size: 2.5em;
   margin-bottom: 0.2em;
@@ -33,6 +42,36 @@ margin:0.5em}
   
 }
 
+.langbuttons{
+  border: 1px solid var(--text);
+  color:var(--text);
+
+}
+.langbutton{
+  border: none;
+  padding: 5px;
+  margin:0 5;
+  font-family: inherit;
+  border-radius: 20px;
+  width: 65px;
+}
+#xex{ 
+   background-color: rgb(96, 0, 131)!important; 
+  color:var(--whiteish) !important;
+}
+#eberban{
+  background: linear-gradient(60deg, #FF66B3 0 40%, #FFF 40% 60%, #66B2FF 60% 100%);
+}
+#lyk{
+  background-color: #84d985;
+}
+#toaq{
+  /*background: linear-gradient(90deg, #D983C2 60% #04CAFC 100%);*/
+  background: linear-gradient(60deg, #FFAEC9 0 40%, #99D9EA 60% 100%);
+}
+#ith4{
+  background-color: #ff4545;
+}
 
 #search {
   flex: 1;
