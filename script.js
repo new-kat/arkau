@@ -127,11 +127,11 @@ function runSearch() {
   const q = searchInput.value.trim().toLowerCase();
   const data = DICT;
 
-  const matches = rankEntries(data, q).slice(0, 100);
-  const len = rankEntries(data, q).length;
-  resnum.textContent = `found ${len} result(s)`;
+  const matches = rankEntries(data, q)?.slice(0, 100);
+  const len = rankEntries(data, q)?.length;
+  resnum.textContent = matches ? `found ${len} result(s)`: "";
   resnuml.innerHTML = numbermaker(len);
-  results.innerHTML = matches.map(renderEntry).join('');
+  results.innerHTML = matches? matches.map(renderEntry).join(''):"";
   afterresults.textContent = `${len>100?"˙˙˙":""}`;
 }
 
