@@ -16,7 +16,7 @@ let currentlang = "lyk";
 
 ///dictionary loading
 let DICT = [{
-    "name": "search a word...",
+    "name": "wait...",
     "defs": [
       {
         "def": ""
@@ -162,12 +162,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const lang = params.get('lang');
   if (q) {
     searchInput.value = q;
-    runSearch();
   }
   if (lang) {
     currentlang = lang;
-    runSearch();
   }
+loadDictionary(lang).then(runSearch);
   if(!lang){currentlang=localStorage.getItem("selectedTool");
     if (!currentlang) status.textContent = "please choose a language"}
   loadDictionary(lang);
