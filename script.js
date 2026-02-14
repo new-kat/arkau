@@ -27,9 +27,11 @@ let DICT = [{
 document.querySelectorAll("button").forEach(button => {
   button.addEventListener("click", async () => {
     const name = button.dataset.dict;
-
+    document.querySelectorAll("button").forEach(b => b.classList.remove("checked"));
+    button.classList.add("checked");
     status.textContent = "loading dictionary...";
     currentlang = name;
+    localStorage.setItem("lastLang", name);
     params.set('lang', name);
     history.replaceState(null, '', '?' + params);
     await loadDictionary(name);
@@ -166,5 +168,7 @@ window.addEventListener('DOMContentLoaded', () => {
     currentlang = lang;
     runSearch();
   }
+  if(!lang){currentlang=localStorage.getItem("selectedTool");
+    if (!currentlang) status.textContent = "please choose a language"}
   loadDictionary(lang);
 });
