@@ -54,7 +54,9 @@ margin:0.5em}
   font-family: inherit;
   border-radius: 20px;
   width: 65px;
+  color:#000
 }
+
 #xex{ 
    background-color: rgb(96, 0, 131)!important; 
   color:var(--whiteish) !important;
