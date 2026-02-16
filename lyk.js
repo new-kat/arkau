@@ -9,6 +9,19 @@ const DICT=[
   ]
  },
  {
+  "name": "a\u0131",
+  "type": "verbtwo",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af loves \u25af.",
+    "sign": [
+     "tt"
+    ]
+   }
+  ]
+ },
+ {
   "name": "ak",
   "type": "verbone",
   "arity": "1",
@@ -50,6 +63,20 @@ const DICT=[
   "defs": [
    {
     "def": "repeats object of second slot"
+   }
+  ]
+ },
+ {
+  "name": "atoe",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af undoes \u25af.",
+    "sign": [
+     "tx",
+     "tt"
+    ]
    }
   ]
  },
@@ -170,6 +197,19 @@ const DICT=[
   ]
  },
  {
+  "name": "bok",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is feces.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "bu",
   "type": "det",
   "defs": [
@@ -220,6 +260,33 @@ const DICT=[
   ]
  },
  {
+  "name": "cha\u0131",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is tea.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "chat",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af closes \u25af.",
+    "sign": [
+     "tt",
+     "0t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "chek",
   "type": "verbone",
   "arity": "1",
@@ -259,6 +326,21 @@ const DICT=[
     "def": "\u25af eats \u25af.",
     "sign": [
      "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "coa\u0131",
+  "type": "verbtwo",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af forgets \u25af.",
+    "sign": [
+     "tt",
+     "tx",
+     "tq"
     ]
    }
   ]
@@ -337,6 +419,19 @@ const DICT=[
   ]
  },
  {
+  "name": "do\u0131",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af gets/acquires \u25af.",
+    "sign": [
+     "tt"
+    ]
+   }
+  ]
+ },
+ {
   "name": "du",
   "type": "verbtwo",
   "arity": "2",
@@ -345,6 +440,46 @@ const DICT=[
     "def": "\u25af sees \u25af.",
     "sign": [
      "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "du\u0131",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af hears \u25af.",
+    "sign": [
+     "tt",
+     "tq"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "du\u0131bak",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is an ear.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "dur",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af stops \u25af.",
+    "sign": [
+     "tx"
     ]
    }
   ]
@@ -390,6 +525,32 @@ const DICT=[
   ]
  },
  {
+  "name": "gan",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a body part.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "ganbak",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is an eye.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "g\u0131",
   "type": "verbone",
   "arity": "1",
@@ -410,6 +571,19 @@ const DICT=[
   "defs": [
    {
     "def": "\u25af is blue."
+   }
+  ]
+ },
+ {
+  "name": "gyem",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is south.",
+    "sign": [
+     "t"
+    ]
    }
   ]
  },
@@ -472,11 +646,33 @@ const DICT=[
   ]
  },
  {
+  "name": "hane",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a feather.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "hau",
   "type": "number",
   "defs": [
    {
     "def": "six"
+   }
+  ]
+ },
+ {
+  "name": "he\u0131",
+  "type": "intjmkr",
+  "defs": [
+   {
+    "def": "vocative: \u201chey X!\u201d"
    }
   ]
  },
@@ -487,6 +683,19 @@ const DICT=[
   "defs": [
    {
     "def": "\u25af is iron.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "heu",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is purple.",
     "sign": [
      "t"
     ]
@@ -522,6 +731,19 @@ const DICT=[
   "defs": [
    {
     "def": "repeats object of context clause"
+   }
+  ]
+ },
+ {
+  "name": "hoe",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is the sun.",
+    "sign": [
+     "t"
+    ]
    }
   ]
  },
@@ -657,12 +879,39 @@ const DICT=[
   ]
  },
  {
+  "name": "jym",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a sentence.",
+    "sign": [
+     "t",
+     "q"
+    ]
+   }
+  ]
+ },
+ {
   "name": "ka",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
     "def": "\u25af is a thing.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kabo",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a cable.",
     "sign": [
      "t"
     ]
@@ -691,6 +940,32 @@ const DICT=[
     "def": "\u25af goes to \u25af.",
     "sign": [
      "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kap",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af is a container of \u25af.",
+    "sign": [
+     "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kara",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is the Earth.",
+    "sign": [
+     "t"
     ]
    }
   ]
@@ -811,12 +1086,64 @@ const DICT=[
   ]
  },
  {
+  "name": "kuem",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is north.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kun",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af accompanies \u25af.",
+    "sign": [
+     "tt"
+    ]
+   }
+  ]
+ },
+ {
   "name": "kyme",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
     "def": "\u25af is a community.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kyt",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is dull (not sharp).",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "lamba",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a lamp.",
     "sign": [
      "t"
     ]
@@ -832,6 +1159,21 @@ const DICT=[
     "def": "\u25af pulls \u25af.",
     "sign": [
      "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "lek",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is related to electricity.",
+    "sign": [
+     "t",
+     "x",
+     "q"
     ]
    }
   ]
@@ -998,6 +1340,20 @@ const DICT=[
   ]
  },
  {
+  "name": "met",
+  "type": "verbtwo",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af measures \u25af.",
+    "sign": [
+     "tt",
+     "tx"
+    ]
+   }
+  ]
+ },
+ {
   "name": "m\u0131",
   "type": "namemkr",
   "defs": [
@@ -1015,6 +1371,62 @@ const DICT=[
     "def": "\u25af is a cat.",
     "sign": [
      "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "m\u0131p",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af misleads/dupes \u25af.",
+    "sign": [
+     "tt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "m\u0131sa",
+  "type": "scaler",
+  "defs": [
+   {
+    "def": "for example (not limited to this)"
+   }
+  ]
+ },
+ {
+  "name": "moa\u0131",
+  "type": "verbtwo",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af remembers \u25af.",
+    "sign": [
+     "tt",
+     "tx",
+     "tq"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "mor",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is daytime.",
+    "sign": [
+     "t"
+    ]
+   },
+   {
+    "def": "\u25af happens at daytime.",
+    "sign": [
+     "0"
     ]
    }
   ]
@@ -1038,6 +1450,19 @@ const DICT=[
   "defs": [
    {
     "def": "five"
+   }
+  ]
+ },
+ {
+  "name": "mun",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a hand.",
+    "sign": [
+     "t"
+    ]
    }
   ]
  },
@@ -1146,6 +1571,25 @@ const DICT=[
   ]
  },
  {
+  "name": "nok",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is night.",
+    "sign": [
+     "t"
+    ]
+   },
+   {
+    "def": "\u25af happens at night.",
+    "sign": [
+     "0"
+    ]
+   }
+  ]
+ },
+ {
   "name": "nome",
   "type": "pronoun",
   "defs": [
@@ -1163,6 +1607,19 @@ const DICT=[
     "def": "\u25af is money.",
     "sign": [
      "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "nur",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af surrounds \u25af.",
+    "sign": [
+     "tt"
     ]
    }
   ]
@@ -1195,6 +1652,19 @@ const DICT=[
   "defs": [
    {
     "def": "they (plural inanimate)"
+   }
+  ]
+ },
+ {
+  "name": "pama",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a finger.",
+    "sign": [
+     "t"
+    ]
    }
   ]
  },
@@ -1261,6 +1731,20 @@ const DICT=[
   ]
  },
  {
+  "name": "pyn",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af opens \u25af.",
+    "sign": [
+     "tt",
+     "0t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "r",
   "type": "switcher",
   "defs": [
@@ -1305,11 +1789,37 @@ const DICT=[
   ]
  },
  {
+  "name": "r\u0131r",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a parent.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "roa\u0131",
   "type": "number",
   "defs": [
    {
     "def": "eight"
+   }
+  ]
+ },
+ {
+  "name": "rok",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af crushes \u25af.",
+    "sign": [
+     "tt"
+    ]
    }
   ]
  },
@@ -1386,6 +1896,46 @@ const DICT=[
   ]
  },
  {
+  "name": "sau",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is ordered.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sea\u0131",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is alcohol.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "seap",
+  "type": "verbtwo",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af calculates/computes \u25af.",
+    "sign": [
+     "tt",
+     "xt"
+    ]
+   }
+  ]
+ },
+ {
   "name": "seo\u0131",
   "type": "verbtwo",
   "arity": "2",
@@ -1433,6 +1983,85 @@ const DICT=[
   ]
  },
  {
+  "name": "she\u0131",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a city.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sh\u0131",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af works on \u25af.",
+    "sign": [
+     "tt",
+     "tx"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sh\u0131k",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is some light.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sh\u0131n",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is sharp.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sh\u0131n",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af shines.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sh\u0131y\u0131",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a heart.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "shr",
   "type": "verbtwo",
   "arity": "2",
@@ -1444,6 +2073,15 @@ const DICT=[
      "xx",
      "tt"
     ]
+   }
+  ]
+ },
+ {
+  "name": "shu",
+  "type": "scaler",
+  "defs": [
+   {
+    "def": "reciprocal"
    }
   ]
  },
@@ -1476,6 +2114,15 @@ const DICT=[
     "sign": [
      "t"
     ]
+   }
+  ]
+ },
+ {
+  "name": "s\u0131ok",
+  "type": "concomp",
+  "defs": [
+   {
+    "def": "idea of.../concept of"
    }
   ]
  },
@@ -1569,6 +2216,19 @@ const DICT=[
   ]
  },
  {
+  "name": "suat",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a sea.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "supat",
   "type": "verbzero",
   "defs": [
@@ -1602,6 +2262,20 @@ const DICT=[
   "defs": [
    {
     "def": "they (plural animate)"
+   }
+  ]
+ },
+ {
+  "name": "tek",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af wants \u25af.",
+    "sign": [
+     "tt",
+     "tx"
+    ]
    }
   ]
  },
@@ -1661,6 +2335,19 @@ const DICT=[
   ]
  },
  {
+  "name": "t\u0131k",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a machine.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "t\u0131om",
   "type": "parenthend",
   "defs": [
@@ -1684,6 +2371,20 @@ const DICT=[
   "defs": [
    {
     "def": "start parenthesis"
+   }
+  ]
+ },
+ {
+  "name": "tou",
+  "type": "verbtwo",
+  "arity": "2",
+  "defs": [
+   {
+    "def": "\u25af is a population that shares \u25af.",
+    "sign": [
+     "tx",
+     "tt"
+    ]
    }
   ]
  },
@@ -1720,6 +2421,19 @@ const DICT=[
   ]
  },
  {
+  "name": "ty\u0131",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af flies.",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
   "name": "tyn",
   "type": "det",
   "defs": [
@@ -1738,6 +2452,15 @@ const DICT=[
   ]
  },
  {
+  "name": "uau",
+  "type": "interjection",
+  "defs": [
+   {
+    "def": "cool"
+   }
+  ]
+ },
+ {
   "name": "uk\u0131y",
   "type": "verbone",
   "arity": "1",
@@ -1746,6 +2469,21 @@ const DICT=[
     "def": "\u25af is a message.",
     "sign": [
      "t",
+     "q"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "ur",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is bad.",
+    "sign": [
+     "t",
+     "x",
      "q"
     ]
    }
@@ -1937,6 +2675,52 @@ const DICT=[
   ]
  },
  {
+  "name": "vyt",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is a year.",
+    "sign": [
+     "t"
+    ]
+   },
+   {
+    "def": "\u25af lasts a year.",
+    "sign": [
+     "0"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "zam",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is time (as a whole).",
+    "sign": [
+     "t"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "zamchok",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is/lasts a long time.",
+    "sign": [
+     "t",
+     "x"
+    ]
+   }
+  ]
+ },
+ {
   "name": "zan",
   "type": "pronoun",
   "defs": [
@@ -2011,6 +2795,20 @@ const DICT=[
   ]
  },
  {
+  "name": "zhur",
+  "type": "verbone",
+  "arity": "1",
+  "defs": [
+   {
+    "def": "\u25af is at right.",
+    "sign": [
+     "t",
+     "x"
+    ]
+   }
+  ]
+ },
+ {
   "name": "zhy",
   "type": "switcher",
   "defs": [
@@ -2062,226 +2860,6 @@ const DICT=[
   ]
  },
  {
-  "name": "s\u0131ok",
-  "type": "concomp",
-  "defs": [
-   {
-    "def": "idea of.../concept of"
-   }
-  ]
- },
- {
-  "name": "a\u0131",
-  "type": "verbtwo",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af loves \u25af.",
-    "sign": [
-     "tt"
-    ]
-   }
-  ]
- },
- {
-  "name": "he\u0131",
-  "type": "intjmkr",
-  "defs": [
-   {
-    "def": "vocative: \u201chey X!\u201d"
-   }
-  ]
- },
- {
-  "name": "nok",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is night.",
-    "sign": [
-     "t"
-    ]
-   },
-   {
-    "def": "\u25af happens at night.",
-    "sign": [
-     "0"
-    ]
-   }
-  ]
- },
- {
-  "name": "mor",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is daytime.",
-    "sign": [
-     "t"
-    ]
-   },
-   {
-    "def": "\u25af happens at daytime.",
-    "sign": [
-     "0"
-    ]
-   }
-  ]
- },
- {
-  "name": "vyt",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a year.",
-    "sign": [
-     "t"
-    ]
-   },
-   {
-    "def": "\u25af lasts a year.",
-    "sign": [
-     "0"
-    ]
-   }
-  ]
- },
- {
-  "name": "sea\u0131",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is alcohol.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "cha\u0131",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is tea.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "pyn",
-  "type": "verbtwo",
-  "arity": "2",
-  "defs": [
-   {
-    "def": "\u25af opens \u25af.",
-    "sign": [
-     "tt",
-     "0t"
-    ]
-   }
-  ]
- },
- {
-  "name": "chat",
-  "type": "verbtwo",
-  "arity": "2",
-  "defs": [
-   {
-    "def": "\u25af closes \u25af.",
-    "sign": [
-     "tt",
-     "0t"
-    ]
-   }
-  ]
- },
- {
-  "name": "kyt",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is dull (not sharp).",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "sh\u0131n",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is sharp.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "do\u0131",
-  "type": "verbtwo",
-  "arity": "2",
-  "defs": [
-   {
-    "def": "\u25af gets/acquires \u25af.",
-    "sign": [
-     "tt"
-    ]
-   }
-  ]
- },
- {
-  "name": "mun",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a hand.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "gan",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a body part.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "sau",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is ordered.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
   "name": "zur",
   "type": "verbone",
   "arity": "1",
@@ -2296,52 +2874,12 @@ const DICT=[
   ]
  },
  {
-  "name": "zhur",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is at right.",
-    "sign": [
-     "t",
-     "x"
-    ]
-   }
-  ]
- },
- {
-  "name": "hoe",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is the sun.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "suat",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a sea.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "rok",
+  "name": "zyt",
   "type": "verbtwo",
   "arity": "2",
   "defs": [
    {
-    "def": "\u25af crushes \u25af.",
+    "def": "\u25af is a barrier between \u25af.",
     "sign": [
      "tt"
     ]
@@ -2349,25 +2887,12 @@ const DICT=[
   ]
  },
  {
-  "name": "t\u0131k",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a machine.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "kap",
+  "name": "\u0131an",
   "type": "verbtwo",
   "arity": "2",
   "defs": [
    {
-    "def": "\u25af is a container of \u25af.",
+    "def": "\u25af bounces off \u25af.",
     "sign": [
      "tt"
     ]
@@ -2375,12 +2900,12 @@ const DICT=[
   ]
  },
  {
-  "name": "sh\u0131k",
+  "name": "k\u0131l\u0131",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
-    "def": "\u25af is some light.",
+    "def": "\u25af is a key. ",
     "sign": [
      "t"
     ]
@@ -2388,12 +2913,12 @@ const DICT=[
   ]
  },
  {
-  "name": "lamba",
+  "name": "chok",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
-    "def": "\u25af is a lamp.",
+    "def": "\u25af is many.",
     "sign": [
      "t"
     ]
@@ -2401,39 +2926,25 @@ const DICT=[
   ]
  },
  {
-  "name": "zam",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is time (as a whole).",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "seap",
+  "name": "cyk",
   "type": "verbtwo",
-  "arity": "1",
+  "arity": "2",
   "defs": [
    {
-    "def": "\u25af calculates/computes \u25af.",
+    "def": "\u25af is in conflict with \u25af.",
     "sign": [
-     "tt",
-     "xt"
+     "tt"
     ]
    }
   ]
  },
  {
-  "name": "r\u0131r",
+  "name": "kule",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
-    "def": "\u25af is a parent.",
+    "def": "\u25af is a joint.",
     "sign": [
      "t"
     ]
@@ -2441,117 +2952,27 @@ const DICT=[
   ]
  },
  {
-  "name": "coa\u0131",
-  "type": "verbtwo",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af forgets \u25af.",
-    "sign": [
-     "tt",
-     "tx",
-     "tq"
-    ]
-   }
-  ]
- },
- {
-  "name": "moa\u0131",
-  "type": "verbtwo",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af remembers \u25af.",
-    "sign": [
-     "tt",
-     "tx",
-     "tq"
-    ]
-   }
-  ]
- },
- {
-  "name": "m\u0131sa",
-  "type": "scaler",
-  "defs": [
-   {
-    "def": "for example (not limited to this)"
-   }
-  ]
- },
- {
-  "name": "ganbak",
+  "name": "cau",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
-    "def": "\u25af is an eye.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "jym",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a sentence.",
+    "def": "\u25af is important.",
     "sign": [
      "t",
+     "x",
      "q"
     ]
    }
   ]
  },
  {
-  "name": "heu",
+  "name": "byk",
   "type": "verbone",
   "arity": "1",
   "defs": [
    {
-    "def": "\u25af is purple.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "kuem",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is north.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "gyem",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is south.",
-    "sign": [
-     "t"
-    ]
-   }
-  ]
- },
- {
-  "name": "pama",
-  "type": "verbone",
-  "arity": "1",
-  "defs": [
-   {
-    "def": "\u25af is a finger.",
+    "def": "\u25af is bent/curved.",
     "sign": [
      "t"
     ]
